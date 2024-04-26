@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url(LogoPic.png); */
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.logo{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height:60px;
+    margin: 0px 16px;
+    margin-top: 12px;
+    border-radius: 50%;
+}
+.logo .logoname{
+    font-size: 1.1rem;
+    color: white;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    /* color: white; */
+    list-style: none;
+    /* padding: 0px 20px; */
+}
+.navbar ul li a{
+    /* display:block; */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 90px 15px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid red; */
+}
+.home::before{
+    content:"";
+    background: url(background-pic.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 80%;
+    z-index:-1;
+    opacity:0.5;
+}
+
+.home .home-heading{
+    font-size: 2.8rem;
+    padding: 13px;
+}
+.home p{
+    font-size: 1.5rem;
+}
+.home .btn{
+    width:110px;
+    height:45px;
+    border: 2px solid white;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color:white;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.home .btn:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.service-container h1{
+    margin: 65px 0px 10px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.service{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service .box{
+    border: 2px solid brown;
+    border-radius: 23px;
+    background-color: rgb(243, 238, 238);
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 10px 20px;
+}
+.service .box img{
+    width:220px;
+    margin: 50px auto 80px;
+}
+.service .box h2{
+    font-size: 1.8rem;
+}
+.servise .box p{
+    font-size: 1.5rem;
+}
+
+.client-container{
+    height:460px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.client-container::before{
+    content:"";
+    position:absolute;
+    background-color: brown;
+    height:66%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+.client-container h1{
+    font-size: 2.2rem;
+    margin: 50px 0px 20px 0px;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 0px;
+}
+.client-item1 img{
+    width:150px;
+    margin: 10px 0px 0px 0px;
+}
+.client-item2 img{
+    width:190px;
+    margin: 10px 20px;
+}
+.client-item3 img{
+    width:135px;
+    margin: 10px 20px;
+}
+.client-item4 img{
+    width:225px;
+    margin: 10px 20px;
+}
+.client-item5 img{
+    width:225px;
+    margin: 10px 20px;
+}
+
+.contact{
+    position: relative;
+    height: 500px;
+}
+.contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity:0.3;
+    background: url(contact-us.jpg) no-repeat center center/cover;
+}
+
+.contact h1{
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin: 20px 0px 10px 0px;
+}
+.contact-box form{
+    width: 20%;
+}
+.contact-box .form-group{
+    margin: 5px 0px;
+}
+.contact-box label{
+    font-size: 1.3rem;
+}
+.contact-box input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 9px;
+}
+
+.footcenter{
+    text-align: center;
+    padding: 20px;
+}
